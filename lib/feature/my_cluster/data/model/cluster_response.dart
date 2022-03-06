@@ -453,7 +453,7 @@ class AgentLoan1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data["id"] = id;
     data["agent_id"] = agentId;
     data["agent_credit_score_id"] = agentCreditScoreId;
@@ -613,10 +613,10 @@ class ActiveAgents {
 class Agent {
   String? id;
   String? userId;
-  dynamic? moniId;
+  dynamic moniId;
   String? eligibleLoanId;
   String? firstName;
-  dynamic? middleName;
+  dynamic middleName;
   String? lastName;
   String? nickname;
   String? birthDate;
@@ -629,14 +629,14 @@ class Agent {
   String? lga;
   String? city;
   String? state;
-  dynamic? country;
+  dynamic country;
   String? phoneNumber;
   String? emailAddress;
   String? bvn;
   int? hasCreditHistory;
   int? verified;
   String? referralLink;
-  dynamic? mediaUrl;
+  dynamic mediaUrl;
   String? channel;
   int? agentRepaymentRate;
   int? bvnVerifiedAfter;
@@ -833,12 +833,12 @@ class AgentLoan {
   String? loanDurationType;
   int? loanDuration;
   String? loanDueDate;
-  dynamic? daysPastDue;
+  dynamic daysPastDue;
   int? loanAmount;
   int? loanAmountDue;
   int? loanInterestDue;
-  dynamic? loanPaymentDate;
-  dynamic? loanPaymentRate;
+  dynamic loanPaymentDate;
+  dynamic loanPaymentRate;
   int? loanAmountPaid;
   int? penaltyOutstanding;
   int? penaltyPaid;

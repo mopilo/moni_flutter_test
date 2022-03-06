@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile_test/core/util/app_string.dart';
 import 'package:mobile_test/core/util/assets.dart';
 import 'package:mobile_test/core/util/dimension.dart';
 import 'package:mobile_test/core/util/pallets.dart';
@@ -136,6 +137,70 @@ class ClusterDetails extends StatelessWidget {
           ),
         ),
         Dimension(height: 16.h),
+        const CustomDivider(),
+        Dimension(height: 16.h),
+        _rowHeader(text: "Group Settings", icon: Assets.groupSettings),
+        Container(
+          margin: EdgeInsets.fromLTRB(15.w, 16.h, 15.w, 8.h),
+          child: Text(
+            "Group rules",
+            style: GoogleFonts.dmSans(
+                color: DColors.dark,
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w400),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 15.w),
+          child: Text(
+            AppString.rules,
+            style: GoogleFonts.dmSans(
+                color: DColors.dark,
+                fontSize: 14.sp,
+                height: 1.8,
+                fontWeight: FontWeight.w400),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.fromLTRB(15.w, 16.h, 15.w, 8.h),
+          child: Text(
+            "Group Whatsapp",
+            style: GoogleFonts.dmSans(
+                color: DColors.dark,
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w400),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 15.w),
+          child: Text(
+            AppString.link,
+            style: GoogleFonts.dmSans(
+                color: DColors.darkGreen,
+                fontSize: 13.sp,
+                fontWeight: FontWeight.w400),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 15.w, vertical: 17.h),
+          child: Row(
+            children: [
+              const Icon(
+                Icons.edit,
+                color: DColors.red,
+                size: 15,
+              ),
+              Dimension(width: 10.w),
+              Text(
+                "Edit Settings",
+                style: GoogleFonts.dmSans(
+                    color: DColors.red,
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w400),
+              )
+            ],
+          ),
+        ),
         const CustomDivider(),
         Dimension(height: 16.h),
         _rowHeader(text: "Benefits earned", icon: Assets.money),

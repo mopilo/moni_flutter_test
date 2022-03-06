@@ -12,3 +12,4 @@ Run-Project:
 - flutter pub get
 - flutter run
 
+[app.zip](https://github.com/mopilo/moni_flutter_test/files/8193478/app.zip)
